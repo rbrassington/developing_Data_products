@@ -1,0 +1,22 @@
+---
+title: "leaflet"
+author: "Riley Brassington"
+date: "2023-05-31"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+
+## My first leaflet map
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+addMarkers(lat=-35.274506, lng=149.134305, popup = "Work sweet work")
+
+my_map
+
+```
+
